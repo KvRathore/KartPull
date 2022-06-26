@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+.header {
+  background: #1b2430;
+  padding: 2rem 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* logo */
+.logo-container {
+  width: 4rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logo-container img {
+  width: 100%;
+}
+
+/* cart-logo */
+
+.cart-logo-container {
+  width: 4rem;
+  height: auto;
+  position: relative;
+}
+
+.cart-logo-container img {
+  width: 100%;
+  cursor: pointer;
+}
+
+/* brand-name */
+.brand-name {
+  display: inline-block;
+  font-family: Dancing Script, Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 2.1rem;
+  color: #eee;
+
+  margin-left: 1rem;
+}
+
+/* Cart counter */
+
+.cart-counter {
+  display: inline-block;
+  padding: 1rem;
+  height: 3rem;
+  width: 3rem;
+  border: 1px solid white;
+  color: white;
+  border-radius: 50%;
+  position: absolute;
+  right: -1rem;
+  bottom: -1rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  background: white;
+  color: #1b2430;
+  filter: opacity(0.6);
+}

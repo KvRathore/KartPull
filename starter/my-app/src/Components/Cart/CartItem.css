@@ -1,0 +1,71 @@
+.cart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: lightgray;
+  transition: all 0.5s;
+}
+
+.cart:hover {
+  background: darkgray;
+  transform: scaleX(1.05);
+}
+
+.cart:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.item-image {
+  width: 15rem;
+  height: 15rem;
+  object-fit: contain;
+}
+
+.item-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.item-info {
+  margin-right: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: stretch;
+  gap: 1rem;
+  width: 25rem;
+}
+
+@media screen and (max-width: 500px) {
+  .item-info {
+    margin-right: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .item-info {
+    margin-right: 1rem;
+    align-items: flex-end;
+  }
+}
+
+.item-title {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  word-spacing: 0.2rem;
+}
+
+.item-price {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.item-quantity {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+}

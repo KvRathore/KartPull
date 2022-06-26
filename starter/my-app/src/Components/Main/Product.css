@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap');
+
+.product {
+  background: #f0f0f0;
+  width: 45rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.product:hover {
+  background: #ddd;
+  transform: translateY(0.1rem);
+}
+
+.product-image-container {
+  width: 20rem;
+  max-height: 25rem;
+  object-fit: cover;
+  /* margin-right: auto; */
+}
+
+@media screen and (max-width: 844px) {
+  .product-image-container {
+    width: 15rem;
+  }
+}
+
+.product-image {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10rem;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.product-title {
+  display: inline-block;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  word-spacing: 0.2rem;
+}
+
+.product-cost {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.product-rating {
+  font-size: 1.2rem;
+}
+
+.add-to-cart {
+  align-self: flex-start;
+  outline: none;
+  background: #00afc1;
+  border: 1px solid white;
+  padding: 0.4rem 2rem;
+  color: white;
+  font-weight: 700;
+  transition: 0.5s all;
+  cursor: pointer;
+}
+
+.add-to-cart:focus,
+.add-to-cart:hover {
+  background: #0093ab;
+  transform: translateY(-0.1rem);
+  box-shadow: 0 0.5rem 0.5rem 0.3rem rgba(0, 0, 0, 0.1);
+}
+
+.add-to-cart:active {
+  transform: translateY(-0.05rem);
+  box-shadow: 0 0.2rem 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
+}
